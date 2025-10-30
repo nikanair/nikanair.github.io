@@ -115,6 +115,16 @@
             margin-bottom: 2rem;
         }
 
+        @keyframes scroll {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+        }
+        .animate-scroll {
+        display: inline-block;
+        white-space: nowrap;
+        animation: scroll 5s linear infinite;
+        }
+
     </style>
 </head>
 <body class="antialiased">
@@ -404,7 +414,9 @@
         <!-- Certificates -->
          <section id="certificates" class="py-12">
             <h2 class="text-3xl font-bold mb-8 text-center text-neon-cyan">&gt; ./certificates</h2>
-            <h2 class="text-3xl font-bold mb-8 text-center text-gold"><marquee>Helloooo</marquee></h2>
+            <h2 class="text-3xl font-bold mb-8 text-center text-yellow-400 overflow-hidden relative">
+            <span class="inline-block animate-scroll">Helloooo</span>
+            </h2>
          </section>
         <!-- Books Section -->
         <section id="books" class="py-12">
